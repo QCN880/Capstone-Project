@@ -2,6 +2,11 @@
 A documentation of my personal project at LITA 
 
 ## Tables of Content
+  - [Project Overview](#project-overview)
+  - [Project Objective](#project-objective)
+  - [Data Sources](#data-sources)
+  - [Data Overview](#data-overview)
+  - [Tools used](#tools-used)
 
 
 ### Project Topic : Customers Segmentation Analysis
@@ -51,6 +56,8 @@ The excel dataset, Customers data contains the following column :
   
  - Documentation: README.md, Project Report (PDF)
  - GitHub for portfolio building
+
+### Formulas Used 
 
 
 
