@@ -37,7 +37,7 @@ The excel dataset, Customers data contains the following column :
  - Customer ID: Unique identifier for each customer.
  - Region: Customer’s geographical region.
  - Subscription Type:Contains type or plan of subscription purchased by the customer.
- - Subscription Start Date:shows the date when the subscription started.
+ - Subscription Start Date:Shows the date when the subscription started.
  - Subscription End Date: Shows the date when the subscription ended or is set to end.
  - Status: Subscription status (e.g., Active, Canceled).
  - Revenue: Revenue generated from each customer’s subscription.
