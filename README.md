@@ -64,6 +64,8 @@ The excel dataset, Customers data contains the following column :
 The formulas used for the analysis and preparation of the projects are :
  - Excel Formulas :
    ``` Excel formula
+   Subscription duration = Subscrtiption end date - Subscription start date
+   
    Average Subscription Duration = AVERAGE (suscription duration)
    
    Average Revenue Per Customer = SUM (Revenue) /COUNTA ( Customer Id)
