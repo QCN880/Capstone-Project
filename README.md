@@ -7,6 +7,7 @@ A documentation of my personal project at LITA
   - [Data Sources](#data-sources)
   - [Data Overview](#data-overview)
   - [Tools used](#tools-used)
+  - [Formulas Used](#formulas-used)
 
 
 ### Project Topic : Customers Segmentation Analysis
