@@ -2,6 +2,7 @@
 A documentation of my personal project at LITA 
 
 ## Tables of Content
+---
   - [Project Overview](#project-overview)
   - [Project Objective](#project-objective)
   - [Data Sources](#data-sources)
@@ -73,6 +74,7 @@ The formulas used for the analysis and preparation of the projects are :
     ``` SQL Formulas```
 
    ### Data Cleaning and Formatting
+   ---
     
 
 
