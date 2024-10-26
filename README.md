@@ -1,4 +1,4 @@
-# Capstone-Project
+# Capstone-Project2
 A documentation of my personal project at LITA 
 
 ## Tables of Content
