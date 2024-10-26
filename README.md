@@ -33,6 +33,24 @@ The excel dataset, Customers data contains the following column :
  - Status: Subscription status (e.g., Active, Canceled).
  - Revenue: Revenue generated from each customer’s subscription.
 
+### Tools used
+---
+ - Microsoft Excel for :
+   1. For data cleaning
+   2.  Advanced formulas, PivotTables, Pivot charts
+   3.  Report writing
+      
+ - Microsoft SQL server for :
+   1. Data Cleaning
+   2. Quering Data
+   3. Grouping Data
+- PowerBi for :
+  1. Data Analysis
+  2. Data Visualization: Charts, Graphs, Slicers, Timelines
+  
+ - Documentation: README.md, Project Report (PDF)
+ - GitHub for portfolio building
+
 
 
 
