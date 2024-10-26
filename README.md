@@ -75,7 +75,13 @@ The formulas used for the analysis and preparation of the projects are :
 
    ### Data Cleaning and Formatting
    ---
-    
+  - Data Cleaning in Excel :
+     1. Remove Duplicate Entries:Go to the Data tab, select Remove Duplicates, and apply it on the entire Customers Data
+     2. Subscription Duration : Add a new column called suscription duration.It was gotten by subtracting subscription end date from the subscription start date.
+     3. Handled missing data: Checked the data to see if any cell is blank
+     4. Saved the clean data and import to SQL for further analysis
+      
+  - Data Cleaning in SQL :
 
 
 
