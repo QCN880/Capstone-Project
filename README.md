@@ -18,8 +18,9 @@ This project involves analyzing customer data for a subscription-based service t
 
 ### Data Sources 
 ---
-The primary source of Data used here is pivot table.xls
+The primary source of Data used here is Capstone Data.Xls
 Click on the link below to download the data
+
 [Download here](https://drive.google.com/drive/folders/1bua5YtNOHzLaDZj8149WooEuTATttp4_)
 
 ### Data Overview 
