@@ -8,6 +8,7 @@ A documentation of my personal project at LITA
   - [Data Overview](#data-overview)
   - [Tools used](#tools-used)
   - [Formulas Used](#formulas-used)
+  - [Data Cleaning and Formatting](#data-cleaning-and-formatting)
 
 
 ### Project Topic : Customers Segmentation Analysis
@@ -59,7 +60,20 @@ The excel dataset, Customers data contains the following column :
  - GitHub for portfolio building
 
 ### Formulas Used 
+The formulas used for the analysis and preparation of the projects are :
+ - Excel Formulas :
+   ``` Excel formula
+   Average Subscription Duration = AVERAGE (suscription duration)
+   
+   Average Revenue Per Customer = SUM (Revenue) /COUNTA ( Customer Id)
+   
+   Customer Cancellation Rate =(COUNTIF('CustomerData (2)'!G2:G33788,"TRUE")/'CustomerData (2)'!E2:E33788)
+   ```
+ - SQL Formulas used :
+    ``` SQL Formulas```
 
+   ### Data Cleaning and Formatting
+    
 
 
 
