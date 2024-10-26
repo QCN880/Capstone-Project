@@ -17,6 +17,10 @@ This project involves analyzing customer data for a subscription-based service t
  3. Identify Cancellations and Renewals Trends: Analyze and visualize trends in cancellations, renewal patterns, and overall customer behavior.
 
 ### Data Sources 
+---
+The primary source of Data used here is pivot table.xls
+Click on the link below to download the data
+[Download here]
 
 
 
