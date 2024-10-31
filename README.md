@@ -8,7 +8,7 @@ A documentation of my personal project at LITA
   - [Data Sources](#data-sources)
   - [Data Overview](#data-overview)
   - [Tools used](#tools-used)
-  - [Formulas Used](#formulas-used)
+  - [Excel Analysis](#excel-analysis)
   - [Data Cleaning and Formatting](#data-cleaning-and-formatting)
 
 
@@ -60,8 +60,13 @@ The excel dataset, Customers data contains the following column :
  - Documentation: README.md, Project Report (PDF)
  - GitHub for portfolio building
 ### Excel Analysis
-
-  #### Formulas Used 
+ - #### Data Cleaning in Excel :
+     1. Remove Duplicate Entries:Go to the Data tab, select Remove Duplicates, and apply it on the entire Customers Data
+     2. Subscription Duration : Add a new column called suscription duration.It was gotten by subtracting subscription end date from the subscription start date.
+     3. Handled missing data: Checked the data to see if any cell is blank
+     4. Saved the clean data and import to SQL for further analysis
+      
+  - #### Formulas Used 
 The formulas used for the analysis and preparation of the projects are :
  - Excel Formulas :
    ``` Excel formula
@@ -73,18 +78,10 @@ The formulas used for the analysis and preparation of the projects are :
    
    Customer Cancellation Rate =(COUNTIF('CustomerData (2)'!G2:G33788,"TRUE")/'CustomerData (2)'!E2:E33788)
    ```
- - SQL Formulas used :
-    ``` SQL Formulas```
 
-   ### Data Cleaning and Formatting
-   ---
-  - Data Cleaning in Excel :
-     1. Remove Duplicate Entries:Go to the Data tab, select Remove Duplicates, and apply it on the entire Customers Data
-     2. Subscription Duration : Add a new column called suscription duration.It was gotten by subtracting subscription end date from the subscription start date.
-     3. Handled missing data: Checked the data to see if any cell is blank
-     4. Saved the clean data and import to SQL for further analysis
-      
-  - Data Cleaning in SQL :
+   ### SQL Analysis
+    - #### Data Cleaning and Formatting
+
 
 
 
