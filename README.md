@@ -172,47 +172,62 @@ The formulas used for the analysis and preparation of the projects are :
          ![Screenshot 2024-10-31 114148](https://github.com/user-attachments/assets/b1d8877b-01d8-423e-8153-f594faa64aa7)
 
       4. Insights :
-          1. High-Revenue Regions: Regions such as East and South show the largest contributions to revenue, which may reflect higher demand, successful marketing efforts, or better market fit in these areas.
-          2. Low-Revenue Regions: Regions like the North contribute less to overall revenue. This could indicate lower market engagement or potential unmet needs in these areas.
-      6. Recommendations :
-         1. Strengthen Support in High-Revenue Regions: Continue supporting and optimizing offerings in high-revenue regions such as East and South to maximize returns. This might include increasing inventory, enhancing customer service, and offering loyalty programs to sustain growth.
-         2. Explore Growth Strategies in Low-Revenue Regions: Conduct market research to understand barriers to revenue growth in lower-revenue regions. Tailor marketing strategies, adjust product offerings, or implement localized campaigns to drive engagement and increase revenue potential
+          1. High Ratio of Active Subscriptions: If active subscriptions significantly outnumber canceled ones, this suggests a stable or growing customer base with potentially high satisfaction levels.
+          2. High Ratio of Canceled Subscriptions: A high cancellation rate relative to active subscriptions indicates possible issues in customer retention. This could result from factors like dissatisfaction with the service, competitive offerings, or unmet customer needs.
+
+      5. Recommendations :
+         1. For High Active Subscriptions: Focus on customer loyalty programs, referral incentives, or exclusive content to retain these subscribers and increase engagement. Explore ways to gather customer feedback regularly to maintain satisfaction.
+         2. For High Canceled Subscriptions: Conduct exit surveys to understand the reasons for cancellation. Based on feedback, consider improving service offerings, implementing retention campaigns, or adjusting pricing structures to reduce cancellations.
+
          
-- Pivot Table 7 : Total Active to Cancelled Subscription
-      1. Question : How much Revenue was generated in each month
-      2. Set up :
-        1. Row : Cancelled
-        2. Value Field : CustomerId summarized as Count
-      3. Pivot Table screenshot
-       
+     - Pivot Table 7 : Total Active to Cancelled Subscription
+  
+       Description :This pivot table analysis compares the total count of active subscriptions to canceled subscriptions. By examining these metrics, we gain insight into customer retention rates and the overall health of the subscription service.
+
+        1. Question : What is the ratio of active to canceled subscriptions, and what does this indicate about customer satisfaction and retention?
+        2. Set up :
+          1. Row : Cancelled
+          2. Value Field : CustomerId summarized as Count
+        3. Pivot Table screenshot
+
+     ![Screenshot 2024-10-31 124801](https://github.com/user-attachments/assets/bcbc8656-ce3c-4d53-a843-003568737a97)
+
               
-      4. Insights :Analyzing monthly sales by revenue can reveal monthly sales trends. For example, if the data shows that sales revenue peaks during certain months, this could indicate seasonal demand, holiday-driven purchases, or effective promotions during those periods. Months with declining revenue might reflect off-peak seasons, potential economic impacts, or customer behavioral changes.
+       4. Insights :Analyzing monthly sales by revenue can reveal monthly sales trends. For example, if the data shows that sales revenue peaks during certain months, this could indicate seasonal demand, holiday-driven purchases, or effective promotions during those periods. Months with declining revenue might reflect off-peak seasons, potential economic impacts, or customer behavioral changes.
       5. Recommendations:During high-revenue months, consider increasing inventory and running targeted marketing campaigns to maximize sales. Discounts, bundling, or promotional offers can further boost revenue during these times.
 
   - ##### Calculating Key Metrics with Excel Formulas
-    - Metric 1: Average Sales per Product
+    - Metric 1: Average Cancellation Rate
 
         1. Formula:
            ``` Excel Formula
-             Average Sales per product =AVERAGEIF(ProductRange, Product, SalesRange)
+              Cencellation Rate=(COUNTIF('CustomerData (2)'!G2:G33788,"TRUE")/'CustomerData (2)'!E2:E33788)
            ```
 
-        3. ![Screenshot 2024-10-31 060402](https://github.com/user-attachments/assets/f7096585-afee-4113-bab0-670831d752ba)
+        3. ![Screenshot 2024-10-31 122054](https://github.com/user-attachments/assets/fa346487-9016-4ee3-a475-d8e766d7764d)
            
-        5. Purpose: Determine average revenue generated per product to gauge profitability.
+        5. Purpose: Determine average rate at which customers cancelled their subscription with time
         6. Result: Provides an average sales value per product, helping in product performance evaluation.
            
-     - Metric 2: Total Revenue by Region
+     - Metric 2: Average Revenue per Customer
         1. Formula:
             ``` Excel Formula
-            Total Revenue by Region =SUMIF(RegionRange, "RegionName", SalesRange)
+            Average revenue Per Customer =SUM('CustomerData (2)'!H2:H33788)/COUNTA('CustomerData (2)'!A2:A33788)
             ```
            
            
-           ![Screenshot 2024-10-31 061328](https://github.com/user-attachments/assets/c7710e0d-b5bf-459c-9a99-616dcd063618)
+          ![Screenshot 2024-10-31 122523](https://github.com/user-attachments/assets/79165da1-0747-4092-a987-a05a7b595102)
+        3. Purpose: Calculate average Revenue generated per customer.
+        4. Result: This can indicate success in upselling and cross-selling strategies or that customers find value in the premium offerings.
 
-        3. Purpose: Calculate total revenue generated by each region.
-        4. Result: Identifies regions with the highest revenue contributions, aiding regional strategy decisions.
+    - Metric 3 : Average subscription Duration
+        1. Formula:
+            ``` Excel Formula
+            Average Subscribtion Duration=AVERAGE('CustomerData (2)'!I2:I33788)
+            ```
+             ![Screenshot 2024-10-31 123315](https://github.com/user-attachments/assets/7135778f-00fb-4584-b1e2-c750bb3cb41f)
+        3. Purpose: Calculate average Revenue generated per customer.
+        4. Result: This can indicate success in upselling and cross-selling strategies or that customers find value in the premium offerings.
 
 
 ### SQL Analysis
@@ -223,8 +238,7 @@ The formulas used for the analysis and preparation of the projects are :
 
    The image below shows the entire view of the dashboard
  
- ![Screenshot 2024-10-31 063125](https://github.com/user-attachments/assets/bccb219d-a846-4ec3-8826-7d3bfad33969)
-
+![Screenshot 2024-10-29 121608](https://github.com/user-attachments/assets/5d3352c0-76ce-4925-b376-85e7f1191288)
 - #### Dashboard Features
   - Interactive filters
       
