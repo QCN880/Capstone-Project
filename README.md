@@ -9,7 +9,7 @@ A documentation of my personal project at LITA
   - [Data Overview](#data-overview)
   - [Tools used](#tools-used)
   - [Excel Analysis](#excel-analysis)
-  - [Data Cleaning and Formatting](#data-cleaning-and-formatting)
+  - [SQL Analysis](#sql-analysis)
 
 
 ### Project Topic : Customers Segmentation Analysis
