@@ -59,8 +59,9 @@ The excel dataset, Customers data contains the following column :
   
  - Documentation: README.md, Project Report (PDF)
  - GitHub for portfolio building
+### Excel Analysis
 
-### Formulas Used 
+  #### Formulas Used 
 The formulas used for the analysis and preparation of the projects are :
  - Excel Formulas :
    ``` Excel formula
