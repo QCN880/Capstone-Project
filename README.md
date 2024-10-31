@@ -181,12 +181,11 @@ The formulas used for the analysis and preparation of the projects are :
 - Pivot Table 7 : Total Active to Cancelled Subscription
       1. Question : How much Revenue was generated in each month
       2. Set up :
-        1. Row : Order Date grouped by month
-        2. Value Field : Revenue
+        1. Row : Cancelled
+        2. Value Field : CustomerId summarized as Count
       3. Pivot Table screenshot
        
-       ![Screenshot 2024-10-31 045832](https://github.com/user-attachments/assets/cdb9371f-cce2-4162-8c43-d7353684321e)
-       
+              
       4. Insights :Analyzing monthly sales by revenue can reveal monthly sales trends. For example, if the data shows that sales revenue peaks during certain months, this could indicate seasonal demand, holiday-driven purchases, or effective promotions during those periods. Months with declining revenue might reflect off-peak seasons, potential economic impacts, or customer behavioral changes.
       5. Recommendations:During high-revenue months, consider increasing inventory and running targeted marketing campaigns to maximize sales. Discounts, bundling, or promotional offers can further boost revenue during these times.
 
