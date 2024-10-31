@@ -10,6 +10,7 @@ A documentation of my personal project at LITA
   - [Tools used](#tools-used)
   - [Excel Analysis](#excel-analysis)
   - [SQL Analysis](#sql-analysis)
+  - [PowerBi Dashboard](#powerbi-dashboard)
 
 
 ### Project Topic : Customers Segmentation Analysis
@@ -78,7 +79,14 @@ The formulas used for the analysis and preparation of the projects are :
    
    Customer Cancellation Rate =(COUNTIF('CustomerData (2)'!G2:G33788,"TRUE")/'CustomerData (2)'!E2:E33788)
    ```
+  - #### Questions
+     1. Analyze customer data using pivot tables to find subscription patterns.
+     2. Calculate the average subscription duration and identify the most popular subscription types.
+     3. Create any other interesting reports
 
+  - #### Exploratory Analysis usising Pivot tables
+      
+    
    ### SQL Analysis
     - #### Data Cleaning and Formatting
 
