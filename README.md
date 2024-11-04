@@ -232,6 +232,174 @@ The formulas used for the analysis and preparation of the projects are :
 
 ### SQL Analysis
 ---
+
+#### 1. Total Customers by Region
+  Description: Determine the distribution of customers across different regions to identify areas with the highest customer base.
+  1. Question: How many customers are there in each region?
+  2. SQL Query
+   ``` Sql Formula
+    SELECT Region ,COUNT(CustomerID) AS Total_Customers
+FROM [dbo].[LITA Capstone p2]
+GROUP by Region;
+
+   ```
+  3. Screenshot Of Table
+
+     ![Screenshot 2024-11-04 014953](https://github.com/user-attachments/assets/c791aee4-f276-4b70-9e2f-c2377359cb76)
+
+  4. Insight: This query helps us understand the concentration of customers by region. Regions with a high customer count such as East may indicate market saturation, while those with low counts such as west could suggest areas for potential growth.
+
+  5. Recommendation: Focus marketing efforts on regions with fewer customers to expand market reach, while considering loyalty programs or tailored offers for regions with a high customer base to improve retention.
+
+#### 2. Most Popular Subscription Type
+  Description: Identify the subscription type with the highest number of subscribers.
+
+  1. Question: Which subscription type has the most customers?
+
+  2. SQL Query:
+     ``` SQL formula
+     SELECT SubscriptionType, COUNT(CustomerID) AS CustomerCount
+     FROM [dbo].[LITA Capstone p2]
+     GROUP BY SubscriptionType
+     ORDER BY CustomerCount DESC;
+     ```
+  3. Screenshot Of table
+
+  ![Screenshot 2024-11-04 020237](https://github.com/user-attachments/assets/e2f0bcc9-be54-49af-ad3f-b5735958b160)
+
+  4. Insight: The query highlights the most and least popular subscription types. High subscription counts for a Basic Subscription Type indicate customer preference, which can guide product focus.
+
+  5. Recommendation: Promote Basic subscription types through targeted advertising and offers. For low-performing subscription types such as Premium and Standard Subscription Type consider revisiting features or adjusting pricing to increase appeal.
+
+#### 3. Canceled Subscriptions within 6 Months
+  Description: Identify customers who canceled their subscription within the first six months, which can signal early dissatisfaction.
+
+  1. Question: Which customers canceled their subscriptions within six months of starting?
+
+  2. SQL Query:
+     ``` SQL Formula
+     SELECT CustomerID, CustomerName,SubscriptionType,
+     DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) AS DurationMonths
+     FROM [dbo].[LITA Capstone p2]
+     WHERE Canceled = 'True' 
+     AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6;
+      ```
+  3. Screenshot of Table
+   
+     ![Screenshot 2024-11-04 021940](https://github.com/user-attachments/assets/2b02945f-c320-4734-8bd4-66373cb0547a)
+
+  4. Insight: Identifying these customers helps to understand potential issues with the subscription offering that lead to early cancellations.And From the result none of the customers cancelled their subscription less than 6 months.
+
+  5. Recommendation: Conduct surveys or gather feedback from these customers to determine common reasons for early cancellations. Implement changes based on feedback to reduce future early cancellations.
+
+#### 4. Average Subscription Duration
+  Description: Calculate the average duration of customer subscriptions to gauge general customer retention.
+
+  1. Question: What is the average subscription duration for all customers?
+
+  2. SQL Query:
+     ``` SQL Formula
+    SELECT AVG(Suscription_Duration) AS AvgSubscriptionDuration
+    FROM[dbo].[LITA Capstone p2] ;
+    ```
+
+  3. Screenshot Of Table
+     
+     ![Screenshot 2024-11-04 031146](https://github.com/user-attachments/assets/2f103947-14a5-481b-874d-9a731a2f62e2)
+  4. This metric indicates how long, on average, customers stay subscribed.It can be deduced from this table that the average subscripyoon duration is 365 days (12 months)
+  5. Recommendation: Work on increasing average subscription duration by implementing retention strategies in North,south and Western region, such as loyalty discounts or enhanced service offerings.
+
+#### 5. Customers with Subscriptions Longer than 12 Months
+  Description: Identify long-term customers with subscriptions extending beyond one year.
+
+  1. Question: Who are the customers with subscriptions longer than 12 months?
+
+  2. SQL Query:
+     ``` Sql Formula
+     SELECT CustomerID, CustomerName,SubscriptionType,
+     DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) AS DurationMonths
+     FROM [dbo].[LITA Capstone p2]
+     WHERE Canceled = 'False' 
+     AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) > 12;
+     ```
+  3.ScreenShot Of Table
+  
+      ![Screenshot 2024-11-04 024454](https://github.com/user-attachments/assets/7beae764-a1bc-4f5f-b8a6-f007673b227e)
+
+  3. Insight:The Table shows that no customer has a subscription older than 12 months. Long-term customers are usually more engaged and can provide valuable insights into what makes the service appealing.
+
+  4. Recommendation: Consider implementing rewards for these customers or involve them in feedback sessions to understand what drives retention.
+
+#### 6. Total Revenue by Subscription Type
+  Description: Determine total revenue per subscription type to identify the most profitable types.
+
+  1. Question: How much revenue does each subscription type generate?
+
+  2. SQL Query:
+     ``` Sql Formula
+     SELECT SubscriptionType, SUM(Revenue) AS TotalRevenue
+     FROM [dbo].[LITA Capstone p2]
+     GROUP BY 
+     SubscriptionType;
+     ```
+  3. Screenshot Of Table
+
+     ![Screenshot 2024-11-04 025218](https://github.com/user-attachments/assets/fa4cfcdf-ae39-4630-a58d-517cd09d7197)
+
+  4. Insight: This metric shows which Basic subscription types are the most financially valuable.
+
+  5. Recommendation: Allocate more resources to Basic subscription types to maximize profit. Consider revising lower-revenue types to enhance value.
+
+#### 7. Top 3 Regions by Subscription Cancellations
+  Description: Identify the top regions with the highest number of subscription cancellations.
+
+  1. Question: Which regions have the highest cancellation rates?
+
+  2. SQL Query:
+     ``` SQL Formula
+     SELECT TOP 3 Region, COUNT(CustomerID) AS Cancellations
+     FROM [dbo].[LITA Capstone p2]
+     WHERE 
+     Canceled = 'True'
+     GROUP BY 
+     Region
+     ORDER BY 
+     Cancellations DESC
+     ```
+  3. Screenshot Of Table
+     
+     ![Screenshot 2024-11-04 022844](https://github.com/user-attachments/assets/30dffe5b-ab0f-4b35-ba38-c7ab23872d7a)
+
+  4. Insight: it was determined that the highest cancellation were recorded in the North and South with no Cancellation in the East.
+High cancellation rates in specific regions may indicate local market issues or service dissatisfaction.
+
+  5. Recommendation: Investigate the causes of cancellations in these regions and adjust services or marketing strategies to reduce churn.
+
+#### 8. Total Active and Canceled Subscriptions
+  Description: Get the overall count of active and canceled subscriptions to assess the general retention.
+
+  1. Question: What is the count of active vs. canceled subscriptions?
+
+  2. SQL Query:
+     ``` Sql formula
+     SELECT Canceled, COUNT(CustomerID) AS SubscriptionCount
+     FROM [dbo].[LITA Capstone p2]
+     GROUP BY 
+     Canceled;
+     ```
+
+  3. Screenshot Of Table
+
+      ![Screenshot 2024-11-04 030551](https://github.com/user-attachments/assets/c8e92c60-3e82-4242-9241-056db2a5f405)
+
+  4. Insight: This breakdown of active versus canceled subscriptions provides insight into overall customer retention.
+
+  5. Recommendation: Continue monitoring this metric to identify changes in customer retention over time. Develop retention strategies for at-risk customers.
+
+
+
+
+
 ### PowerBi Dashboard
 ---
  - #### Dashboard Overview
