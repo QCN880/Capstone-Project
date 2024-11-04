@@ -232,7 +232,10 @@ The formulas used for the analysis and preparation of the projects are :
 
 ### SQL Analysis
 ---
-
+#### In SQL
+  - Load Data into SQL Server: Import the cleaned Excel file into SQL Server as a flat file 
+  - Data Validation and Integrity Checks: Verify data types for each column, particularly ensuring that Subscription Start Date and Subscription End Date are recognized as date types.
+  - #### SQL Queries
 #### 1. Total Customers by Region
   Description: Determine the distribution of customers across different regions to identify areas with the highest customer base.
   1. Question: How many customers are there in each region?
