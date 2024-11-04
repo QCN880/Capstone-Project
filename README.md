@@ -298,11 +298,10 @@ GROUP by Region;
   1. Question: What is the average subscription duration for all customers?
 
   2. SQL Query:
-     ``` SQL Formula
-    SELECT AVG(Suscription_Duration) AS AvgSubscriptionDuration
-    FROM[dbo].[LITA Capstone p2] ;
-    ```
-
+       ``` SQL Formula
+      SELECT AVG(Suscription_Duration) AS AvgSubscriptionDuration
+      FROM[dbo].[LITA Capstone p2] ;
+      ```
   3. Screenshot Of Table
      
      ![Screenshot 2024-11-04 031146](https://github.com/user-attachments/assets/2f103947-14a5-481b-874d-9a731a2f62e2)
