@@ -410,12 +410,109 @@ High cancellation rates in specific regions may indicate local market issues or 
  
 ![Screenshot 2024-10-29 121608](https://github.com/user-attachments/assets/5d3352c0-76ce-4925-b376-85e7f1191288)
 - #### Dashboard Features
-  - Interactive filters
+  
+##### 1. Total Revenue
+ 1. Description: This metric displays the total revenue generated from all active and past customers combined, representing the overall financial performance of the company.
+ 2. Value: 40.5M
+ 3. Insights: A total revenue of 40.5M indicates robust sales, reflecting the effectiveness of current sales and marketing strategies. Since the company serves a relatively small customer base, this value shows that each customer contributes significantly to revenue.
+ 4. Recommendations:
+      1. Revenue Growth: Increase revenue per customer by offering premium add-ons or exclusive features, particularly targeted at high-value customers who already have a strong spending record. Consider expanding the customer base by targeting similar high-value market segments, ensuring each new customer is as valuable as the current ones.
+      2. Customer Segmentation: Segment customers based on spending patterns to develop customized loyalty programs for high-revenue groups and drive engagement in lower-revenue segments.Track and compare revenue growth over different time periods to assess the impact of any marketing campaigns or strategic initiatives.
+
+##### 2. Total Number of Customers
+  1. Description: The count of all customers currently under active subscriptions.
+  2. Value: 12
+  3. Insights: With only 12 active customers, each one holds considerable importance to overall revenue, suggesting the business might operate in a high-value niche or focus on premium clientele.
+  4. Recommendations:
+        1. Customer Retention: Develop personalized customer retention plans, including regular check-ins, feedback collection, and tailored offers, to ensure each customer remains engaged.
+        2. Customer Acquisition: Implement targeted marketing campaigns to attract more customers in similar premium market segments. Focus on referrals, as existing customers may know others who fit this profile. Consider incentives for current customers who refer new clients, increasing brand reach while retaining quality in the customer base.
+         
+##### 3. Average Subscription Duration
+  1. Description: Displays the average length of time that customers stay subscribed, indicating loyalty and satisfaction levels.
+  2. Value: 365 days (1 year)
+  3. Insights: An average subscription duration of one year is an indicator of customer satisfaction, showing that customers generally find value over a long term. This duration is especially notable given the premium market likely being served.
+  4. Recommendations:
+      1. Incentivize Long-Term Subscriptions: Offer discounts or added benefits for annual renewals to encourage even longer commitments. Provide a loyalty reward at the end of the year to thank customers for their ongoing support and motivate them to renew.
+      2. Monitor Renewal Trends: Track renewal rates and notice if they change year-over-year. This data will allow you to predict and address potential churn points or shifts in customer satisfaction.
+
+  ##### 4. Average Cancellation Rate
+  1. Description: Shows the percentage of subscriptions that have been canceled, representing customer turnover.
+  2. Value: 0%
+  3. Insights: A 0% cancellation rate is a strong sign of customer loyalty and satisfaction with current offerings. However, it's essential to monitor this over time to identify any early signs of potential issues.
+  4. Recommendations:
+      1. Continuous Improvement: Though the current rate is ideal, regularly collect feedback to ensure satisfaction and address any potential problems proactively.
+      2. Churn Prediction: Consider setting up alerts for key behaviors often associated with cancellation, such as decreases in engagement or prolonged inactivity, so proactive steps can be taken to retain customers.
+##### 5. Count of Customers by Subscription Type
+  1. Description: A pie chart that breaks down customers by their subscription plan: Basic, Premium, and Standard.
+  2. Distribution:
+        1. Basic: 50.18%
+        2. Premium: 24.98%
+        3. Standard: 24.98%
+  3. Insights: With half of the customer base on the Basic plan, customers are showing preference for the entry-level option. This may be due to budget constraints or satisfaction with the value provided by Basic features.
+  4. Recommendations:
+      1. Upgrade Opportunities: Introduce a loyalty program for Basic subscribers that offers access to Premium or Standard features on a trial basis. This can help them experience the added value of higher tiers and encourage upgrades.
+      2. Highlight the benefits of Premium and Standard plans in communications, showcasing exclusive features and potential ROI to make these plans more attractive.
+      3. Value Reevaluation: Analyze feedback from Basic plan users to understand what they value most and identify potential improvements or added benefits that would make upgrading appealing without oversimplifying the offering.
+##### 6. Count of Customers by Region
+  1. Description: Pie chart illustrating the geographical distribution of customers across the East, South, North, and West regions.
+  2. Distribution:
+      1. East: 25.26%
+      2. South: 24.81%
+      3. North: 24.81%
+      4. West: 24.48%
+  3. Insights: The nearly equal distribution suggests broad appeal across all regions, indicating a well-rounded product offering or effective nationwide marketing.
+  4. Recommendations:
+      1. Tailored Regional Campaigns: Customize campaigns or offers for each region to test which promotions resonate best. For example, offer region-specific discounts or seasonal promotions to encourage loyalty.
+      2. Localization of Services: Gather data to see if regional preferences exist (e.g., different features preferred in the North vs. the South) and consider adding or modifying services to cater to these preferences, potentially boosting regional satisfaction and loyalty.
+     
+##### 7. Total Active to Canceled Subscriptions
+  1. Description: Pie chart depicting the ratio of active to canceled subscriptions over the total period.
+  2. Distribution:
+      1. Active: 55.01%
+      2. Canceled: 44.99%
+  3. Insights: The fact that nearly half of the subscriptions were canceled at some point indicates prior retention issues or that certain customers weren’t fully satisfied with the service.
+  4. Recommendations:
+      1. Retention Efforts for New Signups: Implement a nurturing program for new customers, particularly in the first few months of their subscription. Frequent touchpoints, guidance, and reminders of benefits can help strengthen early engagement.
+      2. Exit Interviews for Cancellations: When customers do cancel, ask them to complete an exit survey to understand their reasons for leaving. Use this feedback to make adjustments that could lower the future cancellation rate.
+     
+##### 8. Subscription Cancellations by Subscription Type
+  1. Description: Stacked bar chart showing the number of cancellations by subscription type (Basic, Premium, Standard).
+  2. Values:
+      1. Basic: 5.0K
+      3. Premium: 1.6K
+      5. Standard: 1.6K
+  3. Insights: The higher cancellation rate for Basic subscriptions suggests customers might not find the plan valuable enough over time, potentially leading to dissatisfaction or a decision to switch to a competitor.
+  4. Recommendations:
+        1. Enhance Basic Plan Offerings: Consider adding minor features or benefits to the Basic plan to increase its perceived value and reduce churn.
+        2. Transition Offers: Offer discounted upgrades to the Standard or Premium plans for Basic subscribers approaching their renewal date, encouraging them to stay with an upgraded experience.
+     
+##### 9. Subscription Cancellations by Region
+  1.Description: Pie chart showing cancellations segmented by region.
+  2. Distribution:
+      1. West: 60.21%
+      3. East: 19.76%
+      4. South: 20.03%
+  3. Insights: The West region has a significantly higher cancellation rate compared to other regions, suggesting regional dissatisfaction or perhaps issues specific to that market.
+  4. Recommendations:
+      1. Region-Specific Feedback: Gather targeted feedback from customers in the West region to identify factors contributing to higher churn, such as customer service quality, feature relevance, or payment convenience.
+      2. Targeted Retention Strategies: Implement retention initiatives, such as improved support or a dedicated relationship manager for high-churn regions, especially for valuable customers at risk of cancellation.
       
-    
-   ### SQL Analysis
-    - #### Data Cleaning and Formatting
-
-
-
-
+##### 10. Monthly Subscription Trend
+  1. Description: Line chart showing the monthly trend of subscriptions throughout the year, providing insights into seasonal or campaign-driven trends.
+  2. Insights: Peaks and dips in the subscription trend may reflect seasonal customer behaviors or the impact of past marketing campaigns. Understanding these trends can help with planning.
+  3. Recommendations:
+      1. Leverage Seasonal Patterns:Plan campaigns around peak months identified in the trend data, and offer promotions or incentives in slower months to even out the subscription volume.
+      2. Campaign Tracking: Track the impact of each campaign on subscription numbers to determine the most effective promotional periods and strategies.
+         
+##### 11. Top Customers by Revenue
+  1. Description: Bar chart highlighting the top 5 customers based on total revenue generated.
+  2. Top 5 Customers:
+        1. Liam: 3.44M
+        3. Mike: 3.42M
+        4. Anna: 3.41M
+        5. Jane: 3.39M
+        6. Eva: 3.38M
+  3. Insights: These customers are high-value and should be prioritized for retention efforts. Their contributions significantly impact total revenue.
+  4. Recommendations:
+     1.  VIP Treatment: Create a “VIP” program for top spenders, providing perks like priority customer support, exclusive previews, or personal account management.
+     2. Cross-Sell Opportunities: Offer complementary services or products to top customers based on their spending history and preferences, encouraging higher engagement and potentially increasing their lifetime value.
