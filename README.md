@@ -410,7 +410,37 @@ High cancellation rates in specific regions may indicate local market issues or 
  
 ![Screenshot 2024-10-29 121608](https://github.com/user-attachments/assets/5d3352c0-76ce-4925-b376-85e7f1191288)
 - #### Dashboard Features
-  
+ - ##### Interactive Filters
+   Interactive Filters
+Position: Located just below the navigation panel on the left side.
+
+Filters:
+
+1. Year Filter: Offers the user the ability to filter data by specific years, shown here as "2022" and "2023."
+  1.Functionality: Selecting a year instantly updates the entire dashboard to display metrics relevant to the chosen year. This provides a dynamic view of metrics across time periods, allowing for comparative analysis and identifying trends.
+  2. Description: These filters make the dashboard interactive, enabling users to isolate specific timeframes and analyze how customer behavior and revenue metrics evolve annually. This is especially useful for trend analysis and performance tracking.
+
+ 2. Filter Interaction with Visuals
+  1. Impact on Dashboard Elements:
+When a year is selected, the filter influences all charts and key metrics, including Total Revenue, Total Numbers of Customers, Subscription Counts by Region and Type, and Monthly Subscription Trend. It allows users to analyze metrics specific to the year they are interested in without needing to navigate away from the main view.
+  2. Description: This filtering feature ensures a cohesive and interactive experience, where insights for different years are quickly accessible. It empowers users to drill down into data specific to their timeframe of interest.
+ 3. Dashboard Interactivity and  Highlights
+  1. Clickable Visuals:Some charts and metrics are set up to allow users to click on specific data points (e.g., Count of Customers by Region) to dynamically filter other visuals within the dashboard, providing a more granular view of each region’s subscription and revenue data.
+
+  2. Highlighting: Selecting certain data points (such as a specific subscription type in the "Count of Customers by Subscription" chart) may apply a cross-filter, automatically updating related visuals to focus on the chosen category.
+
+ 3. Description: This interactivity enables an in-depth analysis by allowing users to explore specific data segments directly within the visuals. It is designed to enhance data exploration and make the dashboard user-driven.
+
+ ###### Summary
+The navigation panel and interactive filters in this dashboard provide an intuitive and user-friendly interface, enabling users to:
+
+   1. Seamlessly navigate between different dashboard sections using icons in the left panel.
+   2. Filter data by year to track performance over time.
+Drill down into specific metrics for a focused analysis, using clickable visuals that apply dynamic filtering.
+   3. This design encourages an interactive data exploration experience, allowing users to gain targeted insights effortlessly and enhancing the dashboard’s functionality for a range of analytical needs.
+      
+ - ##### Navigation Tab
+ - ##### Key Performance Instruction (KPIs)
 ##### 1. Total Revenue
  1. Description: This metric displays the total revenue generated from all active and past customers combined, representing the overall financial performance of the company.
  2. Value: 40.5M
@@ -515,4 +545,6 @@ High cancellation rates in specific regions may indicate local market issues or 
   3. Insights: These customers are high-value and should be prioritized for retention efforts. Their contributions significantly impact total revenue.
   4. Recommendations:
      1.  VIP Treatment: Create a “VIP” program for top spenders, providing perks like priority customer support, exclusive previews, or personal account management.
-     2. Cross-Sell Opportunities: Offer complementary services or products to top customers based on their spending history and preferences, encouraging higher engagement and potentially increasing their lifetime value.
+
+     3. Cross-Sell Opportunities: Offer complementary services or products to top customers based on their spending history and preferences, encouraging higher engagement and potentially increasing their lifetime value.
+ 
