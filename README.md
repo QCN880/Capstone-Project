@@ -440,6 +440,22 @@ Drill down into specific metrics for a focused analysis, using clickable visuals
    3. This design encourages an interactive data exploration experience, allowing users to gain targeted insights effortlessly and enhancing the dashboard’s functionality for a range of analytical needs.
       
  - ##### Navigation Tab
+   Navigation Panel
+Position: Located on the left side of the dashboard, it provides quick access to different sections.
+
+Icons:
+
+Home Icon: Takes the user back to the main view of the dashboard, serving as a default navigation point.
+Data Icon: Represents customer data insights, potentially redirecting to a more detailed breakdown of subscription and revenue metrics.
+Q&A Icon: The Q and A icon is designed to make the dashboard more user-friendly, especially for new users or those unfamiliar with certain metrics or analysis methods.
+Usage:
+Users can click on the Q and A icon to open a panel or popup with helpful information, making it easy to clarify questions without leaving the dashboard.
+
+URL Icon: When clicked, the URL icon redirects users to external resources, such as:
+Detailed documentation or guides relevant to the dashboard’s data.
+Related reports, articles, or industry benchmarks for comparison.
+The GitHub repository where this dashboard's source files, explanations, or updates are stored.
+
  - ##### Key Performance Instruction (KPIs)
 ##### 1. Total Revenue
  1. Description: This metric displays the total revenue generated from all active and past customers combined, representing the overall financial performance of the company.
