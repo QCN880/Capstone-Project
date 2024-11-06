@@ -407,29 +407,28 @@ High cancellation rates in specific regions may indicate local market issues or 
  - #### Dashboard Overview
 
    The image below shows the entire view of the dashboard
- 
-![Screenshot 2024-10-29 121608](https://github.com/user-attachments/assets/5d3352c0-76ce-4925-b376-85e7f1191288)
+ ![Screenshot 2024-11-06 084944](https://github.com/user-attachments/assets/c3ffd9f4-2fc0-46f5-a63a-327127cde063)
 - #### Dashboard Features
- - ##### Interactive Filters
-   Interactive Filters
-Position: Located just below the navigation panel on the left side.
+ - ##### Interactive Filter
+    1. Position: Located just below the navigation panel on the left side.
 
-Filters:
+    2. Filters:
 
-1. Year Filter: Offers the user the ability to filter data by specific years, shown here as "2022" and "2023."
-  1.Functionality: Selecting a year instantly updates the entire dashboard to display metrics relevant to the chosen year. This provides a dynamic view of metrics across time periods, allowing for comparative analysis and identifying trends.
-  2. Description: These filters make the dashboard interactive, enabling users to isolate specific timeframes and analyze how customer behavior and revenue metrics evolve annually. This is especially useful for trend analysis and performance tracking.
+        1. Year Filter: Offers the user the ability to filter data by specific years, shown here as "2022" and "2023."
+            1.Functionality: Selecting a year instantly updates the entire dashboard to display metrics relevant to the chosen year. This provides a dynamic view of metrics across time periods, allowing for comparative analysis and identifying trends.
+            2. Description: These filters make the dashboard interactive, enabling users to isolate specific timeframes and analyze how customer behavior and revenue metrics evolve annually. This is especially useful for trend analysis and performance tracking.
 
- 2. Filter Interaction with Visuals
-  1. Impact on Dashboard Elements:
+       2. Filter Interaction with Visuals
+            1. Impact on Dashboard Elements:
 When a year is selected, the filter influences all charts and key metrics, including Total Revenue, Total Numbers of Customers, Subscription Counts by Region and Type, and Monthly Subscription Trend. It allows users to analyze metrics specific to the year they are interested in without needing to navigate away from the main view.
-  2. Description: This filtering feature ensures a cohesive and interactive experience, where insights for different years are quickly accessible. It empowers users to drill down into data specific to their timeframe of interest.
- 3. Dashboard Interactivity and  Highlights
-  1. Clickable Visuals:Some charts and metrics are set up to allow users to click on specific data points (e.g., Count of Customers by Region) to dynamically filter other visuals within the dashboard, providing a more granular view of each region’s subscription and revenue data.
+            2. Description: This filtering feature ensures a cohesive and interactive experience, where insights for different years are quickly accessible. It empowers users to drill down into data specific to their timeframe of interest.
+               
+       3. Dashboard Interactivity and  Highlights
+            1. Clickable Visuals:Some charts and metrics are set up to allow users to click on specific data points (e.g., Count of Customers by Region) to dynamically filter other visuals within the dashboard, providing a more granular view of each region’s subscription and revenue data.
 
-  2. Highlighting: Selecting certain data points (such as a specific subscription type in the "Count of Customers by Subscription" chart) may apply a cross-filter, automatically updating related visuals to focus on the chosen category.
+            2. Highlighting: Selecting certain data points (such as a specific subscription type in the "Count of Customers by Subscription" chart) may apply a cross-filter, automatically updating related visuals to focus on the chosen category.
 
- 3. Description: This interactivity enables an in-depth analysis by allowing users to explore specific data segments directly within the visuals. It is designed to enhance data exploration and make the dashboard user-driven.
+             3. Description: This interactivity enables an in-depth analysis by allowing users to explore specific data segments directly within the visuals. It is designed to enhance data exploration and make the dashboard user-driven.
 
  ###### Summary
 The navigation panel and interactive filters in this dashboard provide an intuitive and user-friendly interface, enabling users to:
@@ -439,22 +438,21 @@ The navigation panel and interactive filters in this dashboard provide an intuit
 Drill down into specific metrics for a focused analysis, using clickable visuals that apply dynamic filtering.
    3. This design encourages an interactive data exploration experience, allowing users to gain targeted insights effortlessly and enhancing the dashboard’s functionality for a range of analytical needs.
       
- - ##### Navigation Tab
-   Navigation Panel
-Position: Located on the left side of the dashboard, it provides quick access to different sections.
+ - ##### Navigation Panel
 
-Icons:
+      1. Position: Located on the left side of the dashboard, it provides quick access to different sections.
 
-Home Icon: Takes the user back to the main view of the dashboard, serving as a default navigation point.
-Data Icon: Represents customer data insights, potentially redirecting to a more detailed breakdown of subscription and revenue metrics.
-Q&A Icon: The Q and A icon is designed to make the dashboard more user-friendly, especially for new users or those unfamiliar with certain metrics or analysis methods.
-Usage:
-Users can click on the Q and A icon to open a panel or popup with helpful information, making it easy to clarify questions without leaving the dashboard.
+      2. Icons:
 
-URL Icon: When clicked, the URL icon redirects users to external resources, such as:
-Detailed documentation or guides relevant to the dashboard’s data.
-Related reports, articles, or industry benchmarks for comparison.
-The GitHub repository where this dashboard's source files, explanations, or updates are stored.
+          1. Home Icon: Takes the user back to the main view of the dashboard, serving as a default navigation point.
+          2. Data Icon: Represents customer data insights, potentially redirecting to a more detailed breakdown of subscription and revenue metrics.
+          3. Q&A Icon: The Q and A icon is designed to make the dashboard more user-friendly, especially for new users or those unfamiliar with certain metrics or analysis methods.
+              1.Usage: Users can click on the Q and A icon to open a panel or popup with helpful information, making it easy to clarify questions without leaving the dashboard.
+
+          4. URL Icon: When clicked, the URL icon redirects users to external resources, such as:
+              1. Detailed documentation or guides relevant to the dashboard’s data.
+              2. Related reports, articles, or industry benchmarks for comparison.
+              3. The GitHub repository where this dashboard's source files, explanations, or updates are stored.
 
  - ##### Key Performance Instruction (KPIs)
 ##### 1. Total Revenue
