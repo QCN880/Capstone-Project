@@ -447,7 +447,7 @@ Drill down into specific metrics for a focused analysis, using clickable visuals
           1. Home Icon: Takes the user back to the main view of the dashboard, serving as a default navigation point.
           2. Data Icon: Represents customer data insights, potentially redirecting to a more detailed breakdown of subscription and revenue metrics.
           3. Q&A Icon: The Q and A icon is designed to make the dashboard more user-friendly, especially for new users or those unfamiliar with certain metrics or analysis methods.
-              1.Usage: Users can click on the Q and A icon to open a panel or popup with helpful information, making it easy to clarify questions without leaving the dashboard.
+               1. Usage: Users can click on the Q and A icon to open a panel or popup with helpful information, making it easy to clarify questions without leaving the dashboard.
 
           4. URL Icon: When clicked, the URL icon redirects users to external resources, such as:
               1. Detailed documentation or guides relevant to the dashboard’s data.
