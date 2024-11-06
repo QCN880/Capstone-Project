@@ -407,8 +407,8 @@ High cancellation rates in specific regions may indicate local market issues or 
  - #### Dashboard Overview
 
    The image below shows the entire view of the dashboard
-![Uploading Screenshot 2024-11-06 091512.png…]()
-- #### Dashboard Features
+![Screenshot 2024-11-06 091512](https://github.com/user-attachments/assets/1f4a38ef-eeae-46cc-b7d0-d5c6644fb6aa)
+ - #### Dashboard Features
  - ##### Interactive Filter
     1. Position: Located just below the navigation panel on the left side.
 
